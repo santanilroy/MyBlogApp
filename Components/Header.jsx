@@ -55,7 +55,7 @@ const Header = () => {
               className="p-5 outline-none text-[18px]"
             />
             <button
-              className="p-5 border-l-2 active:bg-black active:text-white font-medium duration-300 "
+              className="p-3 sm:p-4 md:p-5 border-l-2 active:bg-black active:text-white font-medium duration-300 text-sm sm:text-base md:text-lg"
               type="submit"
             >
               Subscribe

@@ -8,12 +8,12 @@ import Link from "next/link";
 const Sidebar = () => {
   return (
     <>
-      <div className="flex flex-col bg-slate-100 rounded-r-2xl">
-        <Link href={"/"} className="px-2 sm:pl-14 py-3">
-          <Image src="/Group 1.png" alt="logo" width={120} height={100} />
+      <div className="flex flex-col bg-slate-100 rounded-r-2xl min-h-screen">
+        <Link href={"/"} className="px-2 sm:pl-8 py-3 flex justify-center sm:justify-start">
+          <Image src="/Group 1.png" alt="logo" width={100} height={80} className="w-16 sm:w-24" />
         </Link>
-        <div className="w-28 sm:w-80 h-[100vh] relative py-12">
-          <div className="w-[50%] sm:w-[80%] absolute right-0">
+        <div className="w-16 sm:w-64 md:w-80 h-[100vh] relative py-6 sm:py-12">
+          <div className="w-full sm:w-[80%] absolute right-0">
             <Link
               href="/admin/addProducts"
               className="flex items-center gap-3 font-medium px-3 py-2 border border-black bg-white shadow-[-5px_5px_0px_0px_#000000] rounded-sm"
