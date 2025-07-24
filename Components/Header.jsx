@@ -41,10 +41,7 @@ const Header = () => {
             Latest Posts
           </h1>
           <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-            autem amet reprehenderit quibusdam tenetur dicta accusamus,
-            voluptate minima! Mollitia qui ducimus libero non porro iste, eos
-            nihil illo et sunt.
+            Welcome to our vibrant blogging community, where passionate writers and curious readers come together to share stories, insights, and inspiration. Whether you're here to discover the latest trends in technology, dive into thought-provoking articles, or connect with fellow enthusiasts, our platform is designed to empower your voice and spark meaningful conversations. Join us on this journey of creativity and knowledge—explore, write, and be part of a growing network that celebrates the power of words.
           </p>
           <form
             onSubmit={onsubmithandler}
