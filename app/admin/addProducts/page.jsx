@@ -31,19 +31,26 @@ const page = () => {
     formData.append("author", data.author);
     formData.append("authorImg", data.authorImg);
     formData.append("image", image);
-    const response = await axios.post("/api/blog", formData);
-    if (response.data.success) {
-      toast.success(response.data.message);
-      setImage(false);
-      setData({
-        title: "",
-        description: "",
-        category: "Technology",
-        author: "Alex",
-        authorImg: "/alex.jpg",
-      });
-    } else {
-      toast.error("Error!");
+
+    try {
+      const response = await axios.post("/api/blog", formData);
+      console.log("API response:", response.data);
+      if (response.data.success) {
+        toast.success(response.data.message);
+        setImage(false);
+        setData({
+          title: "",
+          description: "",
+          category: "Technology",
+          author: "Alex",
+          authorImg: "/alex.jpg",
+        });
+      } else {
+        toast.error(response.data.message || "Error!");
+      }
+    } catch (error) {
+      console.error("API error:", error);
+      toast.error(error.response?.data?.message || "Submission failed!");
     }
   };
 

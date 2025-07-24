@@ -31,8 +31,7 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
-.env.local
+
 
 # vercel
 .vercel
@@ -40,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+ export const connectDB = async () => {
+     await mongoose.connect('mongodb+srv://roysantanil696:Rony_roy2003@cluster0.ec00mhg.mongodb.net/blog-app')
+     console.log("DB Connected");
